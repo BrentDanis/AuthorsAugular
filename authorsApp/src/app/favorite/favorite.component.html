@@ -1,0 +1,19 @@
+<form novalidate="" class="fav">
+  <table>
+      <thead>
+          <tr>
+              <td>Authors</td>
+              <td>Actions Avalible</td>
+          </tr>
+      </thead>
+      <tbody *ngFor="let i of authors">
+          <tr>
+              <td>{{ i.firstName }} {{i.lastName}}</td>
+              <td>
+                  <button [routerLink]="['/edit', i._id]" name="button">EDIT</button>
+                  <button (click)="deleteAuthor(i._id)" name="button">DELETE</button>
+              </td>
+          </tr>
+      </tbody>
+  </table>
+</form>

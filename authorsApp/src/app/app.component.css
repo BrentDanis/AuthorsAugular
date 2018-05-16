@@ -1,0 +1,17 @@
+*{
+    font-family: monospace;
+}
+
+/* #wrapper{
+    width: 600px;
+    margin: 0px auto;
+} */
+
+#load_btn{
+    padding: 5px 10px;
+    background-color: grey;
+    color: white;
+    border: none;
+    margin: 20px 10px;
+    text-align: center;
+}
